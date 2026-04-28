@@ -20,6 +20,9 @@ Use this folder in the order below.
 16. [16 - Customer Screen List.md](/c:/Users/Administrator/isaac/localae/docs/biz/app/16%20-%20Customer%20Screen%20List.md)
 17. [17 - Vendor Screen List.md](/c:/Users/Administrator/isaac/localae/docs/biz/app/17%20-%20Vendor%20Screen%20List.md)
 18. [18 - Rider Screen List.md](/c:/Users/Administrator/isaac/localae/docs/biz/app/18%20-%20Rider%20Screen%20List.md)
+19. [19 - Feature Definitions.md](/c:/Users/Administrator/isaac/localae/docs/biz/app/19%20-%20Feature%20Definitions.md)
+20. [20 - ID Key and Naming Conventions.md](/c:/Users/Administrator/isaac/localae/docs/biz/app/20%20-%20ID%20Key%20and%20Naming%20Conventions.md)
+21. [21 - Architecture and Organization.md](/c:/Users/Administrator/isaac/localae/docs/biz/app/21%20-%20Architecture%20and%20Organization.md)
 
 Suggested reading flow:
 
@@ -32,3 +35,5 @@ Suggested reading flow:
 - Use the full UX flow doc before defining feature folders and route groups.
 - Use the focused global, shared, and role UX flow docs when defining feature boundaries and screen content.
 - Use the screen list docs when mapping screens into route groups and feature folders.
+- Use the feature definitions doc before creating the actual app structure.
+- Use the ID key and architecture docs right before updating the real codebase structure.
