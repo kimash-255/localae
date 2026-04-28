@@ -22,40 +22,40 @@ This document focuses on how riders receive jobs, execute deliveries, and track 
 
 ## 3. Rider Delivery UX Flow
 
-| Order | Screen | Rider Intent | Needed Output |
-| --- | --- | --- | --- |
-| 1 | Rider Home Screen | See readiness state | Rider context |
-| 2 | Availability Toggle Screen | Go online | Active status |
-| 3 | Job Feed Screen | Browse jobs | Candidate jobs |
-| 4 | Job Detail Screen | Evaluate job | Accept decision |
-| 5 | Accept / Reject Screen | Commit to job | Assignment confirmed |
-| 6 | Live Navigation Screen | Execute route | Delivery in motion |
-| 7 | Delivery Tracking Screen | Follow progress milestones | Status visibility |
-| 8 | Completion Screen | Finish job | Delivery completed |
-| 9 | Earnings Overview / Withdrawals / History | Review money | Settlement visibility |
+| Order | ID | Screen | Rider Intent | Needed Output |
+| --- | --- | --- | --- | --- |
+| 1 | R1 | Rider Home Screen | See readiness state | Rider context |
+| 2 | R2 | Availability Toggle Screen | Go online | Active status |
+| 3 | R3 | Job Feed Screen | Browse jobs | Candidate jobs |
+| 4 | R4 | Job Detail Screen | Evaluate job | Accept decision |
+| 5 | R5 | Accept / Reject Screen | Commit to job | Assignment confirmed |
+| 6 | R6 | Live Navigation Screen | Execute route | Delivery in motion |
+| 7 | R7 | Delivery Tracking Screen | Follow progress milestones | Status visibility |
+| 8 | R8 | Completion Screen | Finish job | Delivery completed |
+| 9 | R9 / R10 / R11 | Earnings Overview / Withdrawals / History | Review money | Settlement visibility |
 
 ## 4. Rider Use Cases
 
 | Use Case | Description | Main Screens |
 | --- | --- | --- |
-| Go online for work | Rider wants to start receiving jobs | Rider Home, Availability Toggle |
-| Decide whether a job is worth it | Rider needs enough context to accept or reject | Job Feed, Job Detail |
-| Complete a pickup and drop-off | Rider needs accurate route and state updates | Navigation, Tracking, Completion |
-| Confirm proof of completion | Rider wants closure and fewer disputes | Completion |
-| Review earnings | Rider wants visibility into value earned | Earnings Overview, History |
+| Go online for work | Rider wants to start receiving jobs | `R1`, `R2` |
+| Decide whether a job is worth it | Rider needs enough context to accept or reject | `R3`, `R4`, `R5` |
+| Complete a pickup and drop-off | Rider needs accurate route and state updates | `R6`, `R7`, `R8` |
+| Confirm proof of completion | Rider wants closure and fewer disputes | `R8` |
+| Review earnings | Rider wants visibility into value earned | `R9`, `R10`, `R11` |
 
 ## 5. Data Needed For Rider UX
 
-| Screen / Module | Data Needed |
-| --- | --- |
-| Rider Home | Availability status, job readiness state, quick metrics |
-| Job Feed | Job ID, pickup area, drop-off area, distance, estimated payout, urgency |
-| Job Detail | Full route info, package or order summary, merchant info, customer info, payout breakdown |
-| Accept / Reject | Acceptance timer, assignment state, failure reason if unavailable |
-| Live Navigation | Route geometry, pickup point, drop-off point, live location, ETA |
-| Delivery Tracking | Milestone statuses, proof states, communication links |
-| Completion | Delivery confirmation, notes, proof-of-delivery metadata |
-| Earnings Overview / History | Balance, completed jobs, payout history, withdrawal status |
+| ID | Screen / Module | Data Needed |
+| --- | --- | --- |
+| R1 | Rider Home | Availability status, job readiness state, quick metrics |
+| R3 | Job Feed | Job ID, pickup area, drop-off area, distance, estimated payout, urgency |
+| R4 | Job Detail | Full route info, package or order summary, merchant info, customer info, payout breakdown |
+| R5 | Accept / Reject | Acceptance timer, assignment state, failure reason if unavailable |
+| R6 | Live Navigation | Route geometry, pickup point, drop-off point, live location, ETA |
+| R7 | Delivery Tracking | Milestone statuses, proof states, communication links |
+| R8 | Completion | Delivery confirmation, notes, proof-of-delivery metadata |
+| R9 / R10 / R11 | Earnings Overview / History | Balance, completed jobs, payout history, withdrawal status |
 
 ## 6. Rider Decision Information
 

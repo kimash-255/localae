@@ -24,57 +24,57 @@ This document covers UX modules that are reused across customer, vendor, and rid
 
 ## 3. Shared Module Use Cases
 
-| Use Case | User Type | Module | Outcome |
-| --- | --- | --- | --- |
-| Check order or job alerts | All users | Notifications | User knows what changed |
-| View payment history | Customer, vendor, rider | Wallet | User sees financial status |
-| Withdraw earnings | Vendor, rider | Wallet | Payout action starts |
-| Update personal details | All users | Profile / Settings | Account remains current |
-| Contact support | All users | Support | Issue can be resolved |
-| Review trust indicators | Customer, vendor, rider | Profile / Ratings | Better confidence in transactions |
+| Use Case | User Type | Module | Main IDs | Outcome |
+| --- | --- | --- | --- | --- |
+| Check order or job alerts | All users | Notifications | `S1` | User knows what changed |
+| View payment history | Customer, vendor, rider | Wallet | `S2`, `S3` | User sees financial status |
+| Withdraw earnings | Vendor, rider | Wallet | `S2`, `S5` | Payout action starts |
+| Update personal details | All users | Profile / Settings | `S7-S9`, `S11-S14` | Account remains current |
+| Contact support | All users | Support | `S6` | Issue can be resolved |
+| Review trust indicators | Customer, vendor, rider | Profile / Ratings | `S7-S10` | Better confidence in transactions |
 
 ## 4. Shared UX Flow By Module
 
 ### 4.1 Notifications
 
-| Step | User Action | System Response |
-| --- | --- | --- |
-| 1 | User opens notifications | Load recent notification feed |
-| 2 | User taps a notification | Deep link to relevant screen |
-| 3 | User marks read or clears | Update unread state |
+| Step | ID | User Action | System Response |
+| --- | --- | --- | --- |
+| 1 | S1 | User opens notifications | Load recent notification feed |
+| 2 | S1 | User taps a notification | Deep link to relevant screen |
+| 3 | S1 | User marks read or clears | Update unread state |
 
 ### 4.2 Wallet
 
-| Step | User Action | System Response |
-| --- | --- | --- |
-| 1 | User opens wallet | Load balance and summary |
-| 2 | User views history | Load transaction list |
-| 3 | User adds payment method or withdraws | Start payment or payout subflow |
-| 4 | User sees completion | Update status and ledger summary |
+| Step | ID | User Action | System Response |
+| --- | --- | --- | --- |
+| 1 | S2 | User opens wallet | Load balance and summary |
+| 2 | S3 | User views history | Load transaction list |
+| 3 | S4 / S5 | User adds payment method or withdraws | Start payment or payout subflow |
+| 4 | S2 | User sees completion | Update status and ledger summary |
 
 ### 4.3 Support
 
-| Step | User Action | System Response |
-| --- | --- | --- |
-| 1 | User opens support | Show help categories and contact options |
-| 2 | User chooses an issue | Load issue-specific help path |
-| 3 | User submits report | Create support case or handoff |
+| Step | ID | User Action | System Response |
+| --- | --- | --- | --- |
+| 1 | S6 | User opens support | Show help categories and contact options |
+| 2 | S6 | User chooses an issue | Load issue-specific help path |
+| 3 | S6 | User submits report | Create support case or handoff |
 
 ### 4.4 Profile
 
-| Step | User Action | System Response |
-| --- | --- | --- |
-| 1 | User opens profile | Load identity, verification, activity summary |
-| 2 | User edits details | Validate and save changes |
-| 3 | User reviews trust data | Show ratings, badges, and activity history |
+| Step | ID | User Action | System Response |
+| --- | --- | --- | --- |
+| 1 | S7 / S8 / S9 | User opens profile | Load identity, verification, activity summary |
+| 2 | S7 / S8 / S9 | User edits details | Validate and save changes |
+| 3 | S10 | User reviews trust data | Show ratings, badges, and activity history |
 
 ### 4.5 Settings
 
-| Step | User Action | System Response |
-| --- | --- | --- |
-| 1 | User opens settings | Show account and preference options |
-| 2 | User changes preferences | Save updates |
-| 3 | User performs account action | Confirm, then execute |
+| Step | ID | User Action | System Response |
+| --- | --- | --- | --- |
+| 1 | S11 / S12 / S13 / S14 | User opens settings | Show account and preference options |
+| 2 | S11 / S12 / S13 / S14 | User changes preferences | Save updates |
+| 3 | S11 / S12 / S13 / S14 | User performs account action | Confirm, then execute |
 
 ## 5. Shared Screen Inventory
 

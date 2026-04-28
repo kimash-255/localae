@@ -38,12 +38,12 @@ This document covers the app-wide UX that exists before role-specific flows begi
 
 ## 4. Global Entry Flow
 
-| Order | Screen / Module | Purpose | Success Path | Failure Path |
-| --- | --- | --- | --- | --- |
-| 1 | Splash Screen | Load app, check session, fetch role | Go to Role Router | Retry or go to Login |
-| 2 | Login Screen | Authenticate existing user | Go to Role Router | Show auth error |
-| 3 | Register Screen | Create account and save user type | Go to Role Router | Show validation error |
-| 4 | Role Router | Send user to correct root area using stored user type | Open customer, vendor, or rider app | Return to auth / role recovery |
+| Order | ID | Screen / Module | Purpose | Success Path | Failure Path |
+| --- | --- | --- | --- | --- | --- |
+| 1 | G1 | Splash Screen | Load app, check session, fetch role | Go to `G4` Role Router | Retry or go to `G2` Login |
+| 2 | G2 | Login Screen | Authenticate existing user | Go to `G4` Role Router | Show auth error |
+| 3 | G3 | Register Screen | Create account and save user type | Go to `G4` Role Router | Show validation error |
+| 4 | G4 | Role Router | Send user to correct root area using stored user type | Open customer, vendor, or rider app | Return to auth / role recovery |
 
 ## 5. End-To-End Cross-Role UX Flow
 
@@ -61,12 +61,12 @@ This document covers the app-wide UX that exists before role-specific flows begi
 
 | Use Case | Primary User | Description | Key Screens |
 | --- | --- | --- | --- |
-| Sign in and resume | All users | User returns and continues where they left off | Splash, Login, Role Router |
-| First-time onboarding | All users | User creates account and gets a user type during registration | Register, Role Router |
-| Start an order | Customer | User discovers an item and initiates purchase | Home, Search, Detail, Payment |
-| Fulfill an order | Vendor | Vendor accepts and processes demand | Dashboard, Inbox, Detail, Fulfillment |
-| Deliver an order | Rider | Rider accepts a job and completes route | Job Feed, Navigation, Completion |
-| Resolve friction | All users | User reviews support, notifications, or settings | Notifications, Support, Settings |
+| Sign in and resume | All users | User returns and continues where they left off | `G1`, `G2`, `G4` |
+| First-time onboarding | All users | User creates account and gets a user type during registration | `G3`, `G4` |
+| Start an order | Customer | User discovers an item and initiates purchase | `C1`, `C2`, `C3`, `C11` |
+| Fulfill an order | Vendor | Vendor accepts and processes demand | `V1`, `V7`, `V8`, `V9` |
+| Deliver an order | Rider | Rider accepts a job and completes route | `R3`, `R6`, `R8` |
+| Resolve friction | All users | User reviews support, notifications, or settings | `S1`, `S6`, `S11-S14` |
 
 ## 7. Global UX Rules
 
@@ -92,12 +92,12 @@ This document covers the app-wide UX that exists before role-specific flows begi
 
 ## 9. Screen-Level Data Requirements
 
-| Screen / Module | Data Needed |
-| --- | --- |
-| Splash Screen | Token, refresh token, app config, cached role |
-| Login Screen | Phone or email credential fields, auth status, error state |
-| Register Screen | Identity inputs, password or OTP flow, validation rules |
-| Role Router | User role, account status, permission state |
+| ID | Screen / Module | Data Needed |
+| --- | --- | --- |
+| G1 | Splash Screen | Token, refresh token, app config, cached role |
+| G2 | Login Screen | Phone or email credential fields, auth status, error state |
+| G3 | Register Screen | Identity inputs, password or OTP flow, validation rules |
+| G4 | Role Router | User role, account status, permission state |
 
 ## 10. Outputs This Flow Must Produce
 
