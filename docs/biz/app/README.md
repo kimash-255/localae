@@ -15,6 +15,11 @@ Use this folder in the order below.
 11. [11 - Customer UX Flow.md](/c:/Users/Administrator/isaac/localae/docs/biz/app/11%20-%20Customer%20UX%20Flow.md)
 12. [12 - Vendor UX Flow.md](/c:/Users/Administrator/isaac/localae/docs/biz/app/12%20-%20Vendor%20UX%20Flow.md)
 13. [13 - Rider UX Flow.md](/c:/Users/Administrator/isaac/localae/docs/biz/app/13%20-%20Rider%20UX%20Flow.md)
+14. [14 - Global Screen List.md](/c:/Users/Administrator/isaac/localae/docs/biz/app/14%20-%20Global%20Screen%20List.md)
+15. [15 - Shared Screen List.md](/c:/Users/Administrator/isaac/localae/docs/biz/app/15%20-%20Shared%20Screen%20List.md)
+16. [16 - Customer Screen List.md](/c:/Users/Administrator/isaac/localae/docs/biz/app/16%20-%20Customer%20Screen%20List.md)
+17. [17 - Vendor Screen List.md](/c:/Users/Administrator/isaac/localae/docs/biz/app/17%20-%20Vendor%20Screen%20List.md)
+18. [18 - Rider Screen List.md](/c:/Users/Administrator/isaac/localae/docs/biz/app/18%20-%20Rider%20Screen%20List.md)
 
 Suggested reading flow:
 
@@ -26,3 +31,4 @@ Suggested reading flow:
 - Use the screen build order when deciding what to implement first.
 - Use the full UX flow doc before defining feature folders and route groups.
 - Use the focused global, shared, and role UX flow docs when defining feature boundaries and screen content.
+- Use the screen list docs when mapping screens into route groups and feature folders.
