@@ -7,7 +7,7 @@ This is the recommended implementation order for building the app screens from t
 | 1 | Splash Screen | Core / Entry | App boot, token check, and route handoff start here. |
 | 2 | Login Screen | Auth | First usable auth entry after splash. |
 | 3 | Register Screen | Auth | Completes the base auth flow. |
-| 4 | Role Selection Screen | Auth / Routing | Required fallback before sending users into the right app shell. |
+| 4 | Role Router Screen | Auth / Routing | Reads the stored user type created during registration and sends the user into the right app shell. |
 | 5 | Customer Home Screen | Customer | Main post-login landing screen and discovery hub. |
 | 6 | Search Results Screen | Customer | Extends discovery after Home and search input. |
 | 7 | Product Detail Screen | Customer | Core commerce detail view after discovery. |

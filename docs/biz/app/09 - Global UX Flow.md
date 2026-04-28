@@ -42,9 +42,8 @@ This document covers the app-wide UX that exists before role-specific flows begi
 | --- | --- | --- | --- | --- |
 | 1 | Splash Screen | Load app, check session, fetch role | Go to Role Router | Retry or go to Login |
 | 2 | Login Screen | Authenticate existing user | Go to Role Router | Show auth error |
-| 3 | Register Screen | Create account | Go to Role Selection or Role Router | Show validation error |
-| 4 | Role Selection Screen | Assign role when needed | Enter correct app shell | Return to selection |
-| 5 | Role Router | Send user to correct root area | Open customer, vendor, or rider app | Return to auth / role recovery |
+| 3 | Register Screen | Create account and save user type | Go to Role Router | Show validation error |
+| 4 | Role Router | Send user to correct root area using stored user type | Open customer, vendor, or rider app | Return to auth / role recovery |
 
 ## 5. End-To-End Cross-Role UX Flow
 
@@ -63,7 +62,7 @@ This document covers the app-wide UX that exists before role-specific flows begi
 | Use Case | Primary User | Description | Key Screens |
 | --- | --- | --- | --- |
 | Sign in and resume | All users | User returns and continues where they left off | Splash, Login, Role Router |
-| First-time onboarding | All users | User creates account and selects role | Register, Role Selection |
+| First-time onboarding | All users | User creates account and gets a user type during registration | Register, Role Router |
 | Start an order | Customer | User discovers an item and initiates purchase | Home, Search, Detail, Payment |
 | Fulfill an order | Vendor | Vendor accepts and processes demand | Dashboard, Inbox, Detail, Fulfillment |
 | Deliver an order | Rider | Rider accepts a job and completes route | Job Feed, Navigation, Completion |
@@ -98,7 +97,6 @@ This document covers the app-wide UX that exists before role-specific flows begi
 | Splash Screen | Token, refresh token, app config, cached role |
 | Login Screen | Phone or email credential fields, auth status, error state |
 | Register Screen | Identity inputs, password or OTP flow, validation rules |
-| Role Selection Screen | Available role options, selected role, role-save status |
 | Role Router | User role, account status, permission state |
 
 ## 10. Outputs This Flow Must Produce

@@ -133,7 +133,7 @@ LoginScreen
 
 ## Exit
 
-RoleSelectionScreen OR RoleRouter
+RoleRouter
 
 ---
 
@@ -167,7 +167,7 @@ RoleSelectionScreen OR RoleRouter
 
 ---
 
-# 🧭 4. RoleSelectionScreen (IMPORTANT FALLBACK SCREEN)
+# 🧭 4. RoleRouterScreen
 
 ## 🎯 Purpose
 
@@ -226,7 +226,7 @@ SplashScreen
    ↓
 Login / Register
    ↓
-Role Selection (if needed)
+Role is already created during registration
    ↓
 RoleRouter → App Shell
 ```

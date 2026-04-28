@@ -8,7 +8,7 @@
 | #   | Screen / Feature             | Description                     | Customer | Vendor | Rider |
 | --- | ---------------------------- | ------------------------------- | -------- | ------ | ----- |
 | 0.1 | Splash Screen                | App initialization/loading      | ✅        | ✅      | ✅     |
-| 0.2 | Role Selection / Auth Router | Auto-detect or select user role | ✅        | ✅      | ✅     |
+| 0.2 | Auth Router / Role Router | Read stored user type and route correctly | ✅        | ✅      | ✅     |
 | 3   | Notifications                | System + transactional alerts   | ✅        | ✅      | ✅     |
 | 4   | Wallet & Payments            | Transactions, earnings, payouts | ✅        | ✅      | ✅     |
 | 5   | Settings                     | App configuration & preferences | ✅        | ✅      | ✅     |

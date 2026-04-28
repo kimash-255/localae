@@ -44,7 +44,7 @@ Role decides App Shell
 AuthStack
 ├── LoginScreen
 ├── RegisterScreen
-└── RoleSelectionScreen (fallback/manual override)
+└── RoleRouterScreen (reads stored user type)
 ```
 
 ---

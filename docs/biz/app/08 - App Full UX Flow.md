@@ -21,7 +21,7 @@ The full product has 4 main UX layers:
 | --- | --- | --- | --- |
 | 1 | App entry | Splash Screen | Check app state, session, and role |
 | 2 | Authentication | Login / Register | User enters system |
-| 3 | Role routing | Role Selection / Role Router | User is sent to customer, vendor, or rider app |
+| 3 | Role routing | Role Router | User is sent to customer, vendor, or rider app based on stored user type |
 | 4 | Customer demand creation | Home, Search, Product, Service, Events | User expresses intent to buy, book, or join |
 | 5 | Supply matching | Vendor Map, Vendor Selection, Provider selection | User is matched to available supply |
 | 6 | Transaction initiation | Payment Flow / Service Request / Participation | Platform creates transaction record |
@@ -36,8 +36,8 @@ The full product has 4 main UX layers:
 | --- | --- | --- | --- | --- |
 | 1 | Splash Screen | All | Load app, validate token, fetch role | Login or Role Router |
 | 2 | Login Screen | All | Sign in existing user | Role Router |
-| 3 | Register Screen | All | Create new account | Role Selection or Role Router |
-| 4 | Role Selection Screen | All | Assign role if not yet defined | Customer, Vendor, or Rider app |
+| 3 | Register Screen | All | Create new account and persist user type | Role Router |
+| 4 | Role Router | All | Read stored user type and open the correct app shell | Customer, Vendor, or Rider app |
 
 ## 4. Customer UX Flow
 
